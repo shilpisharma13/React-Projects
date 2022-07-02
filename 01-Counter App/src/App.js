@@ -1,4 +1,3 @@
-import logo from './logo.svg'
 import './App.css'
 import { useState } from 'react'
 
@@ -14,7 +13,9 @@ function App() {
   return (
     <section className='container'>
       <h2>Counter App</h2>
-      <h1 className={`${counter > 0 ? 'positive' : 'negative'}`}>{counter}</h1>
+      <h1 className={`counter ${counter > 0 ? 'positive' : 'negative'}`}>
+        {counter}
+      </h1>
       <button onClick={increment}>+</button>
       <button onClick={decrement}>-</button>
     </section>
