@@ -1,0 +1,27 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  text-align: left;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  padding: 2px;
+  margin: 2px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+
+button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+button:hover {
+  background-color: white;
+}
