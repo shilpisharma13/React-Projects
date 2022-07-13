@@ -16,7 +16,7 @@ function App() {
       setIsLoading(false)
       setJobs(data)
     } catch (error) {
-      console.log(error)
+      console.error(error)
       setIsLoading(true)
     }
   }
