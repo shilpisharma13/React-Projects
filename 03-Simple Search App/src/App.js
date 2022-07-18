@@ -13,7 +13,7 @@ function App() {
           placeholder="Search..."
           name="search"
           id="search"
-          value={searchInput}
+          // value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
         />
         {data
@@ -27,7 +27,7 @@ function App() {
           .map((value, i) => {
             return (
               <div key={i}>
-                <p>{value.first_name}</p>
+                <p>{`${value.first_name} ${value.last_name}`}</p>
               </div>
             );
           })}
